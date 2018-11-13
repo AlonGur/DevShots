@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Devshots</title>
+    <link rel="stylesheet" href="/source/styles/myStyles.css">
+
+
+</head>
+
+<body>
+
+    <div class="headerWrapper">
+        <div class="headerContent">
+            <span class="engTitle font2">DEVSHOTS</span>
+            <span class="font2">אירוע המפתחים</span>
+            <img class="netcraftLogo left" src="/source/images/netcraft_logo.png">
+        </div>
+    </div>
+
+    <div class="titleWrapper" id="title">
+        <div class="navbarWrapper">
+            <div class="navbarContent">
+                <ul class="navbar">ניווט
+                    <li class="hide2">
+                        <a href="#title">מה זה?</a>
+                    </li>
+                    <li class="hide2">
+                        <a href="#lectures">ההרצאות</a>
+                    </li>
+                    <li class="hide2">
+                        <a href="#arrival">איפה חניה?</a>
+                    </li>
+                    <li class="hide2">
+                        <a href="#registration">הרשמה</a>
+                    </li>
+                    <li class="hide2">
+                        <a href="#usefulInfo">מידע שימושי</a>
+                    </li>
+                    <li class="hide2">
+                        <a href="#aboutUs">עלינו</a>
+                    </li>
+                </ul>
+                <br>
+            </div>
+        </div>
+        <div class="titleContent">
+            <div class="titleContent2">
+                <div class="hebWrapper">
+                    <span class="hebTitle font1">אירוע פיתוח בראש טוב</span>
+                </div>
+                <div class="titleTextWrapper">
+                    <span class="titleText font2">לדבר על טכנולוגיות מהחזית ואתגרים שווים עם גיבורי יום יום כמוכם</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="lecturesWrapper" id="lectures">
+        <div class="lecturesContent">
+            <div class="lectureTitleWrapper">
+                <span class="lecturesTitle font2">6 הרצאות מרתקות וקצרות</span>
+                <span class="lectureTime">15 דקות לכל הרצאה</span>
+            </div>
+            <div class="lectureItemsWrapper">
+                <!--lecture items added with js/ajax/handlebars-->
+                <img src="/source/images/spongebob.png" class="spongebob hide">
+            </div>
+
+        </div>
+
+    </div>
+    <div class="arrivingWrapper" id="arrival">
+        <div class="arrivingContent">
+            <div class="arrivingtextWrapper">
+                <div class="titleLine">
+                    <span class="hide font2">אז איפה שמים את האוטו?</span>
+                    <span class="hide">ועוד כמה פרטים חשובים</span>
+                </div>
+                <div class="location">
+                    <span class='hide'>הערב יערך ב</span><span class="secTitle">מועדון הסבליים</span>
+                </div>
+                <div class="address">
+                    <span>דרך שלמה 52, תל אביב</span>
+                </div>
+                <div class="hours">
+                    <span class="hide">מתכנסים בשעה:</span>
+                    <span class="time">18:30</span>
+                    <span class="hide">מתחילים בשעה:</span>
+                    <span class="time">19:00</span>
+                </div>
+                <div class="lists">
+                    <!--bus and parking lists added with JS/ajax/handlebars-->
+                    <div class="list1">
+                        <div class="listTitle">חניה</div>
+                        <ol class="parkingList"></ol>
+                    </div>
+                    <div class="list2">
+                        <div class="listTitle">אוטובוסים</div>
+                        <ol class="busList"></ol>
+                    </div>
+                </div>
+            </div>
+            <div class="mapWrapper">
+                <img class="mapPic" src="https://via.placeholder.com/200x200">
+            </div>
+        </div>
+    </div>
+    <div class="signupWrapper" id="registration">
+        <div class="signupContent">
+            <div class="signup-form">
+                <span class="secTitle">הרשמה</span>
+                <div class="signupText hide">
+                    <span>הכניסה היא חינם אבל מספר המקומות מצומצם</span>
+                    <span class="font6">נשמח אם תרשמו רק אם אתם באמת מתכוונים להגיע - כדי שלא נסרב למישהו אחר</span>
+                    <span class="font6">כל הפרטים האישיים ישארו חסויים ואנחנו לא נעביר אותם לאף אחד</span>
+                </div>
+                <form>
+                    <label for="name">שם מלא</label>
+                    <input value="שם מלא" id="name">
+                    <label for="title">תפקיד</label>
+                    <input value="תפקיד" id="title">
+                    <label for="organization">ארגון</label>
+                    <input value="ארגון" id="organization">
+                    <label for="phone">טלפון</label>
+                    <input value="טלפון" id="phone">
+                    <label for="friends">יש חברים?</label>
+                    <input value="פלוס אחד?" id="friends">
+                    <label for="ghost-element"></label>
+                    <button>זהו! שלח אותי</button>
+                </form>
+
+
+            </div>
+        </div>
+    </div>
+    <div class="usefulInfoWrapper container row" id="usefulInfo">
+        <div class="usefulInfoContent">
+            <span class="secTitle">מידע שימושי</span>
+            <!--   usefull info item added with js/ajax/handlbars -->
+            <img class="zoidberg hide" src="/source/images/zoidberg.png">
+        </div>
+    </div>
+    <div class="aboutUsTitleWrapper">
+
+        <span class="secTitle">קצת עלינו</span>
+    </div>
+
+    <div class="aboutUsWrapper" id="aboutUs">
+
+        <div class="aboutUsContent">
+            <ul>
+                <li>
+                    <img class="netcraftLogo" src="/source/images/netcraft_logo.png">
+                </li>
+                <li>
+                    <span>נטקראפט</span>
+                    <br>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</span>
+                </li>
+
+                <li>
+                    <img src="https://via.placeholder.com/20x20">
+                    <span>Lorem ipsum dolor</span>
+                </li>
+                <li>
+                    <img src="https://via.placeholder.com/20x20">
+                    <span>Lorem ipsum dolor</span>
+                </li>
+                <li>
+                    <img src="https://via.placeholder.com/20x20">
+                    <span>Lorem ipsum dolor</span>
+                </li>
+                <li>
+                    <img src="https://via.placeholder.com/20x20">
+                    <span>Lorem ipsum dolor</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="footerWrapper">
+        <div class="footerContent">
+
+            <span>כל הזכויות שמורות לנטקראפט 2012</span>
+            <span>תרימו טלפון: 987455698</span>
+            <span>רחוב בן גוריון 20, קומה ראשונה, ר״ג</span>
+            <span>INFO@NETCRAFT.CO.IL</span>
+            <img class="netcraftLogo" src="/source/images/netcraft_logo.png">
+
+        </div>
+    </div>
+
+
+    <script id="lectureTemplate" type="text">
+        <div class="lectureItem">
+            <img class="lectureItemPic" src={{pic}}>
+            <div class="lectureItemTextWrapper">
+                <div class="lectureTitleBox">
+                    <span class="lectureItemTitle">{{title}}</span>
+                    <span class="lectureItemSpeaker">{{speaker}}</span>
+                </div>
+                <p class="lectureItemText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Scelerisque fermentum dui faucibus in ornare. Aliquet sagittis id consectetur
+                    purus ut. Nisi quis eleifend quam adipiscing. Nulla aliquet enim tortor at auctor urna nunc id.
+                    Lacus luctus accumsan tortor posuere ac ut consequat se </p>
+            </div>
+    
+        </div>
+    </script>
+
+</body>
+
+
+<script type="text/javascript" src="/source/scripts/handlebars.js"></script>
+<script src='/source/scripts/script.js'></script>
+
+
+
+</html>

@@ -1,0 +1,377 @@
+@import 'reset';
+@import 'colors';
+@import 'fonts'; 
+@mixin noImg {img{display:none}};
+$border: 1px solid grey;
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.hide{
+    display:none;
+}
+.secTitle{
+    font-size:$sec-title-font;
+    display:block;
+}
+.navbar {
+    text-align: center;
+    li{
+    display: none;
+        background-color:white;
+        text-align: start;
+        padding: 5px;
+        text-align: center;
+        background-color: transparent;
+    
+         &:hover{
+        background-color: yellow;
+         }
+    }
+}
+
+.navbar .unhide{
+    display:block;
+
+}
+ .aboutUsTitleWrapper{
+    background-color: $bc-about;
+    color:white;
+};
+.aboutUsWrapper{
+    background-color: $bc-about;
+    color:white;
+    @include noImg();
+    ul{
+        display:flex;
+    }
+
+}; 
+ .arrivingWrapper{
+    background-color: $bc-arrive;
+    //text-align: center;
+    .address{
+        font-size: $mobile-medium;
+    }
+    .hours{
+        font-size: $mobile-big;
+        text-align: center;
+    }
+    .lists{
+        display:flex;
+        justify-content: space-around;
+        margin:5px 0;
+      
+        ol{
+            list-style-position: inside;
+              list-style: decimal;
+        }
+       
+        .listTitle{
+           font-size: $mobile-big*.8; 
+        } 
+    }
+}; 
+ .footerWrapper{
+    background-color:$bc-footer; 
+    @include noImg();
+    color:white;
+    font-size:$mobile-small;
+}; 
+ .headerWrapper{
+    background-color: $bc-header;
+    @include noImg();
+    .headerContent{
+        color:white;
+        font-size: $mobile-extra-big;
+    }
+
+}; 
+.headerContent span{
+        display:block;
+        text-align: center;
+        padding:0 10px;
+}
+ .lecturesWrapper{
+    background-color: $bc-lectures;
+    .lectureTitleWrapper .sectitle{
+        display:block;
+    }
+    .lectureItemsWrapper{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    
+}; 
+.lectureItem{
+    flex-basis: 90%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 10%;
+    margin: 10px 0px;
+    padding: 0px 5px;
+    overflow:hidden;
+    .lectureTitleBox{
+        font-size: $mobile-big;
+        background-color: $lecTitleCol;
+        margin:0px 15px;
+        border-radius:10%;
+        span{
+            text-align: center;
+            display: block;
+            &:first-child{
+                font-weight: bolder;
+            }
+        }
+    }
+    p{
+        padding:10px;
+    }
+}
+img{
+    width: 150px;
+}
+ .signupWrapper{
+    background-color:$bc-signup;
+}; 
+.signupContent{
+    input{
+        display:block;
+    }
+    label{
+        display:none;
+    }
+}
+ .titleWrapper{
+    background-color: $bc-title;
+    .hebWrapper{
+         font-size: $mobile-big;
+         text-align: center;
+    }
+    .titleTextWrapper{
+        font-size:$mobile-big*.8;
+        text-align: center;
+
+    }
+  
+}; 
+ .usefulInfoWrapper{
+    background-color: $bc-useful;
+    .usefulItemsWrapper{
+        display:flex;
+        flex-wrap: wrap;
+        .usefulInfoItem{
+            flex-basis: 30%;
+            img{
+              width:100px;
+            }
+        }
+    }
+};
+@media (min-width:690px){
+    .hide{
+        display: inherit;
+    }
+    .spongebob, .zoidberg{
+        display:none;
+    }
+    
+    .headerWrapper {
+        img{
+            display: block;
+            float: left;
+            height: 40px;
+        }
+         span{
+        display:inline;
+    }
+    }
+    .navbar{
+        float: left;
+        background-color: $bc-header;
+        color:white;
+        li{
+            background-color: white;
+            text-align: start;
+        }
+       
+    }
+    .titleContent2{
+        width: 40%;
+        font-size: $mobile-extra-big;
+        .titleTextWrapper{
+            font-size:$mobile-medium;
+        }
+
+    }
+    .lectureTitleWrapper {
+        padding:5px 0;
+        .secTitle{
+            display: inline;
+        }
+        .lectureTime{
+            float:left;
+            &:after{
+                content:'🕒';
+            }
+        }
+
+    }
+       
+   
+    .lectureItem{
+        flex-basis: 30%;
+        margin:10px 10px;
+    }
+    .titleLine{
+       
+        span{
+            display: inline;
+        }
+        &:first-child{
+            font-size:$sec-title-font;
+        }
+        
+    }
+    .arrivingContent{
+        .arrivingtextWrapper{
+            padding:0 20px;
+            .titleLine span:nth-child(2){
+                font-size: $mobile-small*.7;
+                font-weight: lighter;
+             }
+             .location span{
+                 display:inline;
+                 font-size:$mobile-medium*1.3;
+             }
+             .address{
+                 font-weight: lighter;
+             }
+             .hours{
+                 padding: 20px 0;
+                 margin: 20px 0;
+                 border-top: $border;
+                 border-bottom: $border;
+                 span:nth-child(odd){
+                     width: 30px;
+                 }
+             }
+             .lists {
+                 display: flex;
+                 ol{
+                     list-style-position: inside;
+                 }
+                 .list1{
+                     flex-grow: 1;
+                     margin:0 0 0 10px ;
+                 }
+                .listTitle{
+                    padding: 0 10px 10px;
+                    border-bottom: $border;
+                }
+                    li{
+                        padding: 10px 0;
+                    }
+
+             }
+            
+           
+        }
+         display:flex;
+        justify-content: space-between;
+        .mapWrapper{
+            flex-basis: 50%;
+            justify-content: baseline;
+            display:flex;
+            align-items: flex-end;
+        }
+      
+        .lists{
+            justify-content: space-between;
+        }
+        .hours{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding:10px;
+            display:flex;
+            span:nth-child(odd){
+                font-size:$mobile-small;
+                flex-shrink: 1;
+            }
+        }
+    }
+    .signupText span{
+        display: block;
+    }
+    .signupContent {
+        form{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        label{
+        display: inline;
+        flex-basis: 30%;
+        }
+        input{
+           flex-basis: 40%;
+        }
+        button{
+            flex-basis: 40%;
+        }
+    }
+    .footerContent{
+        display: flex;
+        .picWrapper{
+           margin-right:auto;
+          overflow: hidden;
+        }
+        span{
+            padding: 5px 0px 5px 5px;
+            &:last-child::after{
+                content:'';
+            }
+            &:after{
+                content:'\00a0\00a0\00a0|';
+            }
+        }
+        
+        img{
+           display: inherit;
+           height: 15px;
+        }
+    } 
+   
+}
+@media (min-width: 1000px){
+    .headerContent,.titleContent,.lecturesContent, .arrivingContent, .signupContent,
+    .usefulInfoContent, .aboutUsContent, .footerContent{
+        max-width: 1000px;
+        margin:auto;
+    }
+    .lectureItemsWrapper{
+        position: relative;
+        .spongebob{
+            position: absolute;
+            bottom: -50px;
+            right: -150px;
+            display: block;
+            height:150px;
+        }
+    }
+    .usefulInfoContent{
+        position:relative;
+        .zoidberg{
+            display:block;
+            position:absolute;
+            left:-150px;
+            bottom: 70px;
+
+        }
+    }
+   
+}

@@ -1,0 +1,16 @@
+@import 'fonts', 'colors';
+body{
+    font-family: $font-family;
+    .headerWrapper{
+        background-color: $background-color-header; 
+    }
+    .titleWrapper{
+        background-color: $background-color-title;
+    }
+    .lecturesWrapper{
+        background-color: $background-color-lectures;
+    }
+    .arrivingWrapper{
+        background-color: $background-color-arriving;
+    }
+}

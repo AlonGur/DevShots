@@ -1,0 +1,9 @@
+ <div class="titleContent2">
+                <div class="hebWrapper">
+                    <span class="hebTitle font1">אירוע פיתוח בראש טוב</span>
+                </div>
+                <div class="titleTextWrapper">
+                    <span class="titleText font2">לדבר על טכנולוגיות מהחזית ואתגרים שווים עם גיבורי יום יום כמוכם</span>
+                </div>
+            </div>
+        </div>

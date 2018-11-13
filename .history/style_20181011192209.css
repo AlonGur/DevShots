@@ -1,0 +1,434 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+body{
+    direction: rtl;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+ul{
+    list-style-type: none;
+}
+.hide{
+    display: none;
+}
+.left{
+    float: left;
+}
+.font1{
+    font-size: 3em;
+}
+.font2{
+    font-size: 1.3em;
+    display: block;
+}
+.font5{
+    font-size: 0.5em;
+}
+.font6{
+    font-size: 0.7em;
+}
+.headerWrapper{
+    background-color: #282828;
+
+}
+
+
+.headerContent, .navbarContent, .titleContent, .lecturesContent, 
+.arrivingContent, .signupContent, .usefulInfoContent, 
+.aboutUsContent, .aboutUsTitle, .footerContent {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    max-width: 1000px;
+    margin: auto;
+}
+.headerWrapper{
+    background-color: #282828;
+
+}
+.headerContent{
+    color:white;
+}
+.headerContent > img {
+    margin-right: auto;
+}
+.netcraftLogo{
+    height: 25px;
+}
+
+.navbar{
+    color: white;
+    background-color: black;
+}
+.navbar ul{
+    display:none;
+    text-align: center;
+}
+.navbar > li{
+    float: right;
+    list-style: none;
+    padding: 0px 5px;
+}
+.navbar>li:hover{
+    background-color: yellow;
+}
+.navbar a{
+    text-decoration: none;
+}
+.titleWrapper{
+    background-color:#949383;
+}
+.titleWrapper > span{
+    display:block;
+}
+
+.lecturesWrapper{
+    background-color: #E8E8E8;
+}
+
+.lectureTime{
+    margin-left: 0;
+}
+.lectureTime::before{
+    content: "⏱";
+}
+
+.lectureItemTextWrapper{
+    background-color: aliceblue;
+    padding: 20px 20px;
+    border-radius:15%;
+}
+
+.lectureTitleBox{
+    background-color: aquamarine;
+    padding: 0 10px;
+    border-radius: 30%;
+  
+}    
+.lectureItem{
+  /*  padding: 20px 0;
+    margin: 0 10px;*/
+    max-width: 500px;
+}
+
+.lectureItemPic{
+    display: block;
+    margin: auto;
+}
+.lectureItemTitle{
+    font-size: 1.1em;
+}
+.lectureItemSpeaker{
+    font-size: .9em;
+}
+.lectureItemText{
+    height: 200px;
+    overflow: hidden;
+}
+.arrivingWrapper{
+    background-color: #DCDCDC;
+}
+.parkingList, .busList{
+    list-style-position: inside;
+}
+
+
+.signupWrapper{
+    background-color: #969688;
+}
+.signupWrapper > input{
+    display: block;
+}
+.usefulInfoWrapper{
+    background-color: #EBEBEB;
+   display: flex;
+   flex-wrap: wrap;
+    justify-content: space-around;
+}
+.usefulInfoContent{
+    justify-content: space-between;
+}
+.usefulInfoContent span:first-of-type{
+    flex-basis: 100%;
+}
+.usefulInfoItem{
+    display: inline-block;
+    flex-basis: 17%;
+    padding: 0 5px 5px 0;
+    
+    /*margin: 10px 30px 0 30px;*/
+}
+
+.usefulInfoItem > img{
+    display: block;
+     margin: auto;
+
+}
+.usefulInfoTitle{
+    font-size: 1.1em;
+    display: block;
+}
+.usefulInfoText{
+    font-size: 0.7em;
+}
+.aboutUsWrapper, .aboutUsTitleWrapper{
+   background-color:#212121;
+   padding: 5px 0;
+   color: white;
+   
+}
+.aboutUsContent {
+    color: white;
+}
+.aboutUsContent  span:first-of-type{
+    flex-basis: 100%;
+}
+.aboutUsWrapper  ul{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.aboutUsWrapper li {
+    flex-basis: 15%;
+}
+.footerWrapper{
+    background-color: #212121;
+}
+.footerContent {
+    color:white;
+    padding-top: 50px;
+}
+.footerContent span{
+    flex-basis: 100%;
+}
+
+
+
+@media (min-width: 768px){
+    .spongebob{
+        display:none;
+    }
+    .hide{
+        display: block;
+    }
+    .hide2{
+       display: none;
+    }
+    .headerContent, .lecturesContent, .arrivingContent, 
+    .signupContent, .usefulInfoContent{
+        padding: 20px 0 20px 0;
+    }
+    .headerContent span{
+        padding-left: 20px;
+    }
+    .navbarWrapper{
+       float:left;
+     
+    }
+    .navbarContent{
+        max-width: none;
+        justify-content: flex-end;
+        flex-wrap: nowrap;
+    }
+    
+    .navbar li{ 
+        float: none; 
+        padding: 5px 15px;
+    background-color: white;
+        border: 1px groove grey;
+        
+    }
+   .titleContent{
+       padding-bottom: 50px; 
+       display:flex;
+   }
+   .titleContent2{
+       flex-basis:30%;
+   }
+   .hebWrapper{
+       flex-basis: 100%;
+   }
+   .hebWrapper span{
+       width:300px;
+   }
+    .lectureTitleWrapper{
+        display: flex;
+        justify-content: space-between;
+        flex-basis: 100%;
+    }
+   
+    .lectureItemsWrapper{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .lectureItem{
+        margin-top:20px;
+        width: 250px;
+        flex-basis: 30%;
+    }
+    
+ 
+   .arrivingContent{
+     
+       justify-content: space-between;
+   }
+   .titleLine span{
+       display: inline;
+   }
+ 
+   .arrivingInfo{
+      flex-basis: 100%;
+      padding-bottom: 10px;
+   }
+   
+   .arrivingHours{
+       flex-basis: 100%;
+       padding-bottom: 10px;
+       border: black solid;
+       border-width: 1px 0 1px 0;
+   }
+   .hours{
+       display: flex;
+       border-top: 1px solid grey;
+       border-bottom: 1px solid grey;
+       padding: 10px 0;
+   }
+   .time{
+       font-size: 2em;
+       flex-basis: 25%;
+
+   }
+   .arrivingHours:not(.time)
+   {
+       font-size: .8em;
+   }
+   .lists{
+       display:flex;
+       justify-content: space-between;
+   }
+   .listTitle{
+       padding: 10px 0;
+       border-bottom:1px solid grey;
+   }
+   .lists li{
+       padding-top: 10px;
+   }
+   .parkingWrapper{
+       flex-basis: 100%;
+       display:flex;
+       justify-content: space-between;
+   }
+   
+   .mapWrapper{
+    align-self: flex-end;
+   }
+   .singupContent{
+       display:flex;
+   }
+   .signup-form{
+       flex-basis: 45%;
+       display:flex;
+       flex-direction: column;
+       color:white;
+       
+   }
+   .signup-form > span{
+       color:yellow;
+   }
+   .signupText{
+       display:flex;
+       flex-direction: column;
+   }
+   .signupText span:nth-child(3){
+       border-width: 1px 0 1px 0;
+       border-color: white;
+       border-style: solid;
+       padding: 10px 0; 
+       margin: 20px 0;
+   }
+   .signupContent label{
+    flex-basis: 30%;   
+}
+.signup-form input{
+    margin:0 0 4px 0;
+    padding: 5px 10px;
+    
+}
+  .signup-form form{
+    flex-basis: 45%;
+   display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+    }
+  .signup-form button{
+      background-color: #4D4D4D;
+      border: #4D4D4D;
+      color:white;
+   
+  }
+  .aboutUsContent{
+      padding: 20px 0;
+  }
+  .aboutUsContent ul{
+      flex-direction:row;
+  }
+   .footerContent {
+    display:flex;
+   justify-content: flex-start;
+   flex-basis: auto;
+    font-size: .5em;
+}
+.footerContent span{
+    flex-basis: auto;
+    padding: 0 3px;
+    
+}
+.footerContent span:after{
+    content: '\00a0 \00a0 \00a0 | ';
+}
+
+.footerContent img{
+    height: 20px;
+    margin-right: auto;
+   
+}
+
+
+}
+
+@media (min-width:1024px){
+
+    .spongebob{
+        display:block;
+        height: 100px;
+        position: absolute;
+        right:500px;
+        top:1120px;
+        z-index: -1;
+        
+    }
+    .zoidberg{
+        display: block;
+        height:150px;
+        position: absolute;
+
+    }
+}

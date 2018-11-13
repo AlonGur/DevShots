@@ -1,0 +1,37 @@
+@import 'fonts', 'colors';
+
+body{
+    font-family: $font-family;
+}
+.headerWrapper{
+    img{
+        float: left;
+        height: 25px;
+    }
+}
+.titleWrapper{
+    background-color: $bc-title;
+}
+.lecturesWrapper{
+    background-color: $bc-lectures;
+}
+.arrivingWrapper{
+    background-color: $bc-arriving;
+}
+.singupWrapper{
+    background-color: $bc-arriving;
+}
+.usefulInfoWrapper{
+    background-color: $bc-useful
+}
+.aboutUsTitleWrapper{
+    background-color: $bc-about;
+}
+.aboutUsWrapper{
+    background-color: $bc-about;
+}
+.footerWrapper{
+    background-color: $bc-footer;
+}
+
+///when doing media query for large screen @include center

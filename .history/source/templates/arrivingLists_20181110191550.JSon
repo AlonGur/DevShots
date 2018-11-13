@@ -1,0 +1,24 @@
+
+
+{
+    "buses": [
+        {
+            "from":"rakevet merkaz",
+            "busNum":[42,142]
+            },
+        {
+            "from": "tahana merkazit",
+            "busNum":[]
+        }
+
+    ],
+       
+     "busTemp": "{{#each buses}} 
+
+                {{/each}}"
+        },
+    "parking":["אליפלט","אלפסי","חיים בן עתר"],
+    "template": "{{#each parking}}  <li> {{this}}</li> {{/each}}"
+ }
+
+                      

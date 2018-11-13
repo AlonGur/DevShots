@@ -1,0 +1,14 @@
+//font family
+$font-family: font-family: Verdana, Tahoma, sans-serif;
+
+//font sizes:
+$page-title-font: font-size=3em;
+$page-subtitle-font: $page-title-font*.6;
+$sec-title-font: $page-subtitle-font; 
+$sec-subtitle-font: $sec-title-font*.6;
+$item-title-font: $sec-title-font*.8;
+$item-subtitle-font: $item-title-font*.8;
+$item-detail-font:$item-subtitle-font*.8;
+
+//font styles:
+$bold: font-weight=bold;

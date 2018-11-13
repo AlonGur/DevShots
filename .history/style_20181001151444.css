@@ -1,0 +1,55 @@
+body{
+    direction: rtl;
+}
+.headerLogo{
+    float: left;
+}
+.navbar > li{
+    float: right;
+    list-style: none;
+    padding: 0 5px;
+}
+.titleWrapper > span{
+    display:block;
+}
+.lecturesWrapper{
+    background-color: #e5ebea;
+}
+.lectureItemTextWrapper{
+    background-color: aliceblue;
+    padding: 0 20px;
+}
+.lectureItemsWrapper{
+    padding: 20px 0;
+
+}
+.lectureTitleBox{
+    background-color: aquamarine;
+    padding: 0 20px;
+}    
+.lectureItem{
+    /*padding: 0 10px;*/
+}
+
+.lectureItemPic{
+    display: block;
+    margin: auto;
+}
+.mapPic{
+    display: block;
+    margin: auto;
+}
+.usefulInfoItem > img{
+    display: block;
+    margin: auto;
+
+}
+.aboutUsWrapper > li{
+    float: right;
+}
+.hide{
+    display: none;
+}
+.left{
+    float: left;
+}

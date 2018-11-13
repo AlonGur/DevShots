@@ -1,0 +1,12 @@
+.lectureItemsWrapper{
+    padding: 20px;
+
+}
+.lectureItem{
+    padding: 0 20px;
+}
+
+.lectureItemPic{
+    display: block;
+    margin: auto;
+}

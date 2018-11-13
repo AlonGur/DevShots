@@ -1,0 +1,275 @@
+@import 'reset';
+@import 'colors';
+@import 'fonts'; 
+@mixin noImg {img{display:none}};
+
+.hide{
+    display:none;
+}
+.secTitle{
+    font-size:$sec-title-font;
+    display:block;
+}
+.navbar {
+    text-align: center;
+    li{
+    display: none;
+        background-color:white;
+        text-align: start;
+        padding: 5px;
+        text-align: center;
+        background-color: transparent;
+    
+         &:hover{
+        background-color: yellow;
+         }
+    }
+}
+
+.navbar .unhide{
+    display:block;
+
+}
+ .aboutUsTitleWrapper{
+    background-color: $bc-about;
+    color:white;
+};
+.aboutUsWrapper{
+    background-color: $bc-about;
+    color:white;
+    @include noImg();
+    ul{
+        display:flex;
+    }
+
+}; 
+ .arrivingWrapper{
+    background-color: $bc-arrive;
+    //text-align: center;
+    .address{
+        font-size: $mobile-medium;
+    }
+    .hours{
+        font-size: $mobile-big;
+        text-align: center;
+    }
+    .lists{
+        display:flex;
+        justify-content: space-around;
+        margin:5px 0;
+      
+        ol{
+            list-style-position: inside;
+              list-style: decimal;
+        }
+       
+        .listTitle{
+           font-size: $mobile-big*.8; 
+        } 
+    }
+}; 
+ .footerWrapper{
+    background-color:$bc-footer; 
+    @include noImg();
+    color:white;
+    font-size:$mobile-small;
+}; 
+ .headerWrapper{
+    background-color: $bc-header;
+    @include noImg();
+    .headerContent{
+        color:white;
+        font-size: $mobile-extra-big;
+    }
+
+}; 
+.headerContent span{
+        display:block;
+        text-align: center;
+        padding:0 10px;
+}
+ .lecturesWrapper{
+    background-color: $bc-lectures;
+    .lectureTitleWrapper span{
+        display:block;
+    }
+    .lectureItemsWrapper{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    
+}; 
+.lectureItem{
+    flex-basis: 90%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 10%;
+    margin: 10px 0px;
+    padding: 0px 5px;
+    overflow:hidden;
+    .lectureTitleBox{
+        font-size: $mobile-big;
+        background-color: $lecTitleCol;
+        margin:0px 15px;
+        border-radius:10%;
+        span{
+            text-align: center;
+            display: block;
+            &:first-child{
+                font-weight: bolder;
+            }
+        }
+    }
+    p{
+        padding:10px;
+    }
+}
+img{
+    width: 150px;
+}
+ .signupWrapper{
+    background-color:$bc-signup;
+}; 
+.signupContent{
+    input{
+        display:block;
+    }
+    label{
+        display:none;
+    }
+}
+ .titleWrapper{
+    background-color: $bc-title;
+    .hebWrapper{
+         font-size: $mobile-big;
+         text-align: center;
+    }
+    .titleTextWrapper{
+        font-size:$mobile-big*.8;
+        text-align: center;
+
+    }
+  
+}; 
+ .usefulInfoWrapper{
+    background-color: $bc-useful;
+    .usefulItemsWrapper{
+        display:flex;
+        flex-wrap: wrap;
+        .usefulInfoItem{
+            flex-basis: 30%;
+            img{
+              width:100px;
+            }
+        }
+    }
+};
+@media (min-width:690px){
+    .hide{
+        display: inherit;
+    }
+    .spongebob, .zoidberg{
+        display:none;
+    }
+    
+    .headerWrapper {
+        img{
+            display: block;
+            float: left;
+            height: 40px;
+        }
+         span{
+        display:inline;
+    }
+    }
+    .navbar{
+        float: left;
+        background-color: $bc-header;
+        color:white;
+        li{
+            background-color: white;
+            text-align: start;
+        }
+       
+    }
+   
+    .lectureItem{
+        flex-basis: 30%;
+        margin:10px 10px;
+    }
+    .titleLine{
+       
+        span{
+            display: inline;
+        }
+        &:first-child{
+            font-size:$sec-title-font;
+        }
+        
+    }
+    .arrivingContent{
+        .arrivingtextWrapper{
+            padding:0 20px;
+        }
+        display:flex;
+        justify-content: space-between;
+        .mapWrapper{
+            flex-basis: 50%;
+            justify-content: baseline;
+            display:flex;
+            align-items: flex-end;
+            img{
+                
+            }
+        }
+      
+        .lists{
+            justify-content: space-between;
+        }
+        .hours{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding:10px;
+            display:flex;
+            span:nth-child(odd){
+                font-size:$mobile-small;
+                flex-shrink: 1;
+            }
+        }
+    }
+    .signupText span{
+        display: block;
+    }
+    .signupContent {
+        form{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        label{
+        display: inline;
+        flex-basis: 30%;
+        }
+        input{
+           flex-basis: 40%;
+        }
+        button{
+            flex-basis: 40%;
+        }
+    }
+    .footerContent{
+        span{
+            padding: 5px 10px;
+        }
+        img{
+            display: inherit;
+            height: inherit;
+            float: left;
+        }
+    } 
+   
+}

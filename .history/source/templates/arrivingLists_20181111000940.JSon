@@ -1,0 +1,21 @@
+
+
+{
+    "buses": [
+        {
+            "from":"רכבת מרכז",
+            "busNum":[42,142]
+            },
+        {
+            "from": "תחנה מרכזית",
+            "busNum":[96,21,196]
+        }
+
+    ],
+       
+     "busTemp": "{{#each buses}}<li>{{from}} - {{#each busNum}}{{this}} {{/each}} {{/each}} </li>",
+    "parking":["אליפלט","אלפסי","חיים בן עתר"],
+    "template": "{{#each parking}}  <li> {{this}}</li> {{/each}}"
+ }
+
+                      

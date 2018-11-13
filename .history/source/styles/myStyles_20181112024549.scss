@@ -1,0 +1,107 @@
+@import 'reset';
+@import 'colors';
+@import 'fonts'; 
+@mixin noImg {img{display:none}};
+
+.hide{
+    display:none;
+}
+.navbar {
+    text-align: center;
+    li{
+    display: none;
+    }
+}
+
+.navbar .unhide{
+    display:block;
+
+}
+ .aboutUsTitlteWrapper{
+    background-color: $bc-about;
+};
+.aboutUsWrapper{
+    background-color: $bc-about;
+    @include noImg();
+
+}; 
+ .arrivingWrapper{
+    background-color: $bc-arrive;
+}; 
+ .footerWrapper{
+    background-color:$bc-footer; 
+    @include noImg();
+}; 
+ .headerWrapper{
+    background-color: $bc-header;
+    @include noImg();
+    .headerContent{
+        color:white;
+        font-size: $mobile-extra-big;
+        span{
+            display:block;
+            text-align: center;
+        }
+    }
+
+}; 
+ .lecturesWrapper{
+    background-color: $bc-lectures;
+    .lectureTitleWrapper span{
+        display:block;
+        font-size: $mobile-big;
+        text-align: center;
+    }
+    .lectureItemsWrapper{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .lectureItem{
+        flex-basis:90%;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        border-radius: 10%;
+        margin: 10px 0px;
+        padding: 0px,5px;
+        .lectureTitleBox{
+            font-size: $mobile-big;
+            background-color: $lecTitleCol;
+            margin:0px,10px;
+            border-radius:5%;
+            span{
+                text-align: center;
+                display: block;
+                &:first-child{
+                    font-weight: bolder;
+                }
+            }
+        }
+    }
+    img{
+        width: 150px;
+    }
+    
+}; 
+ .signupWrapper{
+    background-color:$bc-signup;
+}; 
+ .titleWrapper{
+    background-color: $bc-title;
+    .hebWrapper{
+         font-size: $mobile-big;
+         text-align: center;
+    }
+    .titleTextWrapper{
+        font-size:$mobile-big*.8;
+        text-align: center;
+
+    }
+  
+}; 
+ .usefulInfoWrapper{
+    background-color: $bc-useful;
+    @include noImg();
+};

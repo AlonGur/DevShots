@@ -1,0 +1,116 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+body{
+    direction: rtl;
+    padding: 10px 20px;
+    background-color: gray;
+}
+ul{
+    list-style-type: none;
+}
+.font1{
+    font-size: 1.5em;
+}
+.font2{
+    font-size: 1.3em;
+    display: block;
+}
+.header{
+    background-color: black;
+    color: white;
+}
+.navbarWrapper{
+    display: flex;
+    background-color: yellow;
+}
+.navbar > li{
+    float: right;
+    list-style: none;
+    padding: 0 5px;
+}
+.titleWrapper{
+    background-color: rgb(73, 45, 45);
+}
+.titleWrapper > span{
+    display:block;
+}
+.lectureTitleWrapper > span{
+    display:block;
+}
+.lecturesWrapper{
+    background-color: #e5ebea;
+}
+.lectureItemTextWrapper{
+    background-color: aliceblue;
+    padding: 20px 20px;
+}
+.lectureItemsWrapper{
+    padding: 20px 0;
+
+}
+.lectureTitleBox{
+    background-color: aquamarine;
+    padding: 0 20px;
+    border-radius: 30%;
+}    
+.lectureItem{
+    padding: 10px 10px;
+}
+
+.lectureItemPic{
+    display: block;
+    margin: auto;
+}
+.arrivingWrapper{
+    background-color: gray;
+    padding: 10px 10px;
+}
+.mapPic{
+    display: block;
+    margin: auto;
+}
+.usefulInfoWrapper{
+   /* display:inline-flex; */
+    justify-content: space-around;
+}
+.usefulInfoItem{
+    display: inline-block;
+    width: 100px;
+    margin: 0 15px 0 15px;
+}
+.usefulInfoItem > img{
+    display: block;
+    margin: auto;
+
+}
+.signupWrapper > input{
+    display: block;
+}
+.aboutUsWrapper > li{
+    float: right;
+    list-style: none;
+}
+.hide{
+    display: none;
+}
+.left{
+    float: left;
+}

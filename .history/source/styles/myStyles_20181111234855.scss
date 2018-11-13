@@ -1,0 +1,68 @@
+@import 'reset';
+@import 'colors';
+@import 'fonts'; 
+@mixin noImg {img{display:none}};
+.hide{
+    display:none;
+}
+.navbar li{
+    display: none;
+    }
+
+.navbar .unhide{
+    display:block;
+
+}
+ .aboutUsTitlteWrapper{
+    background-color: $bc-about;
+};
+.aboutUsWrapper{
+    background-color: $bc-about;
+    @include noImg();
+
+}; 
+ .arrivingWrapper{
+    background-color: $bc-arrive;
+}; 
+ .footerWrapper{
+    background-color:$bc-footer; 
+    @include noImg();
+}; 
+ .headerWrapper{
+    background-color: $bc-header;
+    @include noImg()
+}; 
+ .lecturesWrapper{
+    background-color: $bc-lectures;
+    .lectureTitleWrapper span{
+        display:block;
+    }
+    .lectureItemWrapper{
+        display:flex;
+        flex-wrap: wrap;
+    }
+    .lectureItem{
+        flex-basis:10%;
+    }
+    img{
+        height: 50px;
+    }
+    
+}; 
+ .signupWrapper{
+    background-color:$bc-signup;
+}; 
+ .titleWrapper{
+    background-color: $bc-title;
+    .hebWrapper{
+         font-size: $page-title-font; 
+    }
+    .titleTextWrapper{
+        font-size:$page-subtitle-font;
+    }
+  
+}; 
+ .usefulInfoWrapper{
+    background-color: $bc-useful;
+    @include noImg();
+};

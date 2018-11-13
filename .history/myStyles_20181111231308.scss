@@ -1,0 +1,32 @@
+@import 'colors';
+@import 'fonts'; 
+ .aboutUsTitlteWrapper{
+    background: $bc-about;
+};
+.aboutUsWrapper{
+    background: $bc-about;
+}; 
+ .arrivingWrapper{
+    background-color: $bc-arrive;
+}; 
+ .footerwrapper{
+    background-color:$bc-footer; 
+}; 
+ .headerWrapper{
+    background-color: $bc-header;
+    img{
+      display:none;  
+    }
+}; 
+ .lecturesWrapper{
+    background-color: $bc-lectures;
+}; 
+ .signupWrapper{
+    background-color:$bc-signup;
+}; 
+ .titleWrapper{
+    background-color: $bc-title;
+}; 
+ .usefulInfoWrapper{
+    background-color: $bc-useful;
+}

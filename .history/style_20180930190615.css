@@ -1,0 +1,19 @@
+.lecturesWrapper{
+    background-color: #e5ebea;
+}
+.lectureItemTextWrapper{
+    background-color: aliceblue;
+}
+.lectureItemsWrapper{
+    padding: 20px 0;
+
+}
+
+.lectureItem{
+    padding: 0 10px;
+}
+
+.lectureItemPic{
+    display: block;
+    margin: auto;
+}

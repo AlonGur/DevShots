@@ -1,0 +1,35 @@
+@import 'colors';
+@import 'fonts'; 
+@mixin noImg {img{display:none}};
+ .aboutUsTitlteWrapper{
+    background-color: $bc-about;
+};
+.aboutUsWrapper{
+    background-color: $bc-about;
+    @include noImg();
+}; 
+ .arrivingWrapper{
+    background-color: $bc-arrive;
+}; 
+ .footerwrapper{
+    background-color:$bc-footer; 
+    @include noImg();
+}; 
+ .headerWrapper{
+    background-color: $bc-header;
+    @include noImg()
+}; 
+ .lecturesWrapper{
+    background-color: $bc-lectures;
+    @include noImg()
+}; 
+ .signupWrapper{
+    background-color:$bc-signup;
+}; 
+ .titleWrapper{
+    background-color: $bc-title;
+}; 
+ .usefulInfoWrapper{
+    background-color: $bc-useful;
+    @include noImg();
+};

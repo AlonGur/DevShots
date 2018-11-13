@@ -1,0 +1,33 @@
+@import 'fonts', 'colors';
+
+body{
+    font-family: $font-family;
+  
+}
+div{
+    $bc: $bc-header; 
+}
+.titleWrapper{
+    $bc: $bc-title;
+};
+.lecturesWrapper{
+    $bc: $bc-lectures;
+}
+.arrivingWrapper{
+    $bc: $bc-arriving;
+}
+.singupWrapper{
+    $bc: $bc-arriving;
+}
+.usefulInfoWrapper{
+    $bc: $bc-useful
+}
+.aboutUsTitleWrapper{
+    $bc: $bc-about;
+}
+.aboutUsWrapper{
+    $bc: $bc-about;
+}
+.footerWrapper{
+    $bc: $bc-footer;
+}
