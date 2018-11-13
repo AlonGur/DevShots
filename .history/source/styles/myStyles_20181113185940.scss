@@ -381,6 +381,9 @@ img{
         }
         span{
             padding: 5px 0px 5px 5px;
+            &:last-child::after{
+                content:'';
+            }
             &:after{
                 content:'\00a0\00a0\00a0|';
             }

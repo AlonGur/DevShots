@@ -46,12 +46,9 @@ body{
     display: none;
         background-color:white;
         text-align: start;
-        padding: 10px 20px;
+        padding: 5px;
         text-align: center;
         background-color: transparent;
-            a{
-                text-decoration: none;
-            }
     
          &:hover{
         background-color: yellow;
@@ -349,11 +346,8 @@ img{
             padding-bottom: 20px;
         }
         color:white;
-        .signupText {
+        .signupText span:last-child{
            font-size: $mobile-small;
-           span:first-child{
-               font-size: $mobile-big;
-           }
         }
         form{
             display: flex;
@@ -381,6 +375,9 @@ img{
         }
         span{
             padding: 5px 0px 5px 5px;
+            &:last-child::after{
+                content:'';
+            }
             &:after{
                 content:'\00a0\00a0\00a0|';
             }

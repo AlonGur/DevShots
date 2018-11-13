@@ -9,11 +9,6 @@ function open() {
 }
 
 
-
-
-
-
-
 //getting arriving info from arrivingList.JSon with AJAX
 var arriveReq = new XMLHttpRequest;
 arriveReq.open('GET', '/source/templates/arrivingLists.JSon');
@@ -83,7 +78,6 @@ function resizeTest() {
 
 //this func gets the lecture template in the script tag in index.html, and compiles it with the info in [lectures], numofLecs times.
 function loadLecs(numOfLecs) {
-    var lectureWrapper = document.querySelector('.lectureItemsWrapper');
     var lecTemp = document.getElementById("lectureTemplate").innerHTML;
     var someLec = Handlebars.compile(lecTemp);
     for (i = 0; i < numOfLecs; i++) {

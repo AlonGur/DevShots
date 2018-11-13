@@ -105,13 +105,14 @@ body {
   display: none;
   background-color: white;
   text-align: start;
-  padding: 10px 20px;
+  padding: 10px;
   text-align: center;
   background-color: transparent;
 }
 
 .navbar li a {
-  text-decoration: none;
+  -webkit-text-decoration-color: none;
+          text-decoration-line: none;
 }
 
 .navbar li:hover {
@@ -506,6 +507,9 @@ img {
   }
   .footerContent span {
     padding: 5px 0px 5px 5px;
+  }
+  .footerContent span:last-child::after {
+    content: '';
   }
   .footerContent span:after {
     content: '\00a0\00a0\00a0|';
