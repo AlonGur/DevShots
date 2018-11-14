@@ -291,12 +291,30 @@ img {
 }
 
 .usefulInfoWrapper .usefulItemsWrapper .usefulInfoItem {
-  -ms-flex-preferred-size: 20%;
-      flex-basis: 20%;
+  -ms-flex-preferred-size: 10%;
+      flex-basis: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 10px;
+}
+
+.usefulInfoWrapper .usefulItemsWrapper .usefulInfoItem h5 {
+  font-weight: bolder;
+  padding: 5px 0;
+}
+
+.usefulInfoWrapper .usefulItemsWrapper .usefulInfoItem .usefulPicWrapper {
+  border-radius: 20%;
+  overflow: hidden;
 }
 
 .usefulInfoWrapper .usefulItemsWrapper .usefulInfoItem img {
-  width: 100px;
+  width: 150px;
 }
 
 .aboutUsContent img {
@@ -326,6 +344,14 @@ img {
   .navbar li {
     background-color: white;
     text-align: start;
+  }
+  .slantedLine {
+    position: relative;
+    top: 10px;
+    height: 30px;
+    background-color: #605F53;
+    -webkit-transform: skew(1deg, 1deg);
+            transform: skew(1deg, 1deg);
   }
   .titleContent2 {
     width: 40%;
@@ -516,7 +542,7 @@ img {
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 690px) and (min-width: 1000px) {
   .headerContent, .titleContent, .lecturesContent, .arrivingContent, .signupContent,
   .usefulInfoContent, .aboutUsContent, .aboutUsTitleWrapper span, .footerContent {
     max-width: 1000px;

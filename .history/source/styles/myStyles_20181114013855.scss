@@ -237,15 +237,10 @@ img{
         }
        
     }
-    .titleWrapper{
-       // position: relative;
-    }
     .slantedLine{
-        position: relative;
-       top: 10px;
-        height: 30px;
-        background-color: $slantedLineCol;
-        transform: skew(1deg, 1deg);
+        height: 20px;
+        background-color:brown;
+        transform: skew(15deg, 15deg);
     }
     .titleContent2{
         width: 40%;
@@ -413,7 +408,7 @@ img{
         }
     } 
    
-
+}
 @media (min-width: 1000px){
     .headerContent,.titleContent,.lecturesContent, .arrivingContent, .signupContent,
     .usefulInfoContent, .aboutUsContent,.aboutUsTitleWrapper span, .footerContent{
@@ -444,5 +439,4 @@ img{
         }
     }
    
-}
 }

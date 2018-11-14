@@ -186,20 +186,17 @@ img{
         display:flex;
         flex-wrap: wrap;
         .usefulInfoItem{
-            flex-basis: 10%;
+            flex-basis: 15%;
             display:flex;
             flex-direction: column;
+            
             margin: 10px;
-            h5{
-                font-weight: bolder;
-                padding: 5px 0;
-            }
             .usefulPicWrapper{
                 border-radius: 20%;
                 overflow: hidden;
             }
             img{
-              width:150px;
+              width:200px;
             }
         }
     }
@@ -236,16 +233,6 @@ img{
             text-align: start;
         }
        
-    }
-    .titleWrapper{
-       // position: relative;
-    }
-    .slantedLine{
-        position: relative;
-       top: 10px;
-        height: 30px;
-        background-color: $slantedLineCol;
-        transform: skew(1deg, 1deg);
     }
     .titleContent2{
         width: 40%;
@@ -413,7 +400,7 @@ img{
         }
     } 
    
-
+}
 @media (min-width: 1000px){
     .headerContent,.titleContent,.lecturesContent, .arrivingContent, .signupContent,
     .usefulInfoContent, .aboutUsContent,.aboutUsTitleWrapper span, .footerContent{
@@ -444,5 +431,4 @@ img{
         }
     }
    
-}
 }
