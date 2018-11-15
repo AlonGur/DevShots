@@ -73,7 +73,7 @@ function getandcompileTemplate(myTemplateURL,myData,myTarget){
 //ONLY AFTER PAGE LOADS - need to add a function for that
 
 
-window.onload=function(){
+document.onload=function(){
     console.log('onload on')
     //check window size and hide useful/lectures if needed
     var screenSize='';
@@ -86,38 +86,35 @@ window.onload=function(){
     }
 
     //eventlistener on window size
-    window.addEventListener('resize', showHide);
-
-
-    function hide(){
-      
-        myLecs=document.querySelectorAll('.lectureItem');
-        console.log(myLecs)
-        for(i=3;i<myLecs.length;i++){
-            console.log('in hide lec loop')
-            myLecs[i].classList.add('hide');
-        }
-        //hide 6 useful
-        myItems=document.querySelectorAll('.usefulInfoItem');
-        for(i=4;i<myItems.length;i++){
-            myItems[i].classList.add('hide');
-        }
-    
-    }
-  
-    function showHide(){
-        console.log('resize working')
-        if(window.innerWidth<700 && screenSize==='big'){
-            screenSize='small';
-            hide();
-        }
-        else if(window.innerWidth>=700 && screenSize==='small'){
-            screenSize='big';
-          document.querySelectorAll('.lectureItem, .usefulInfoItem').forEach(item=>item.classList.remove('hide'))
-         
-        }
-    }
+    window.addEventListener('resize', showHide)
 
 };
 
 
+function hide(){
+    myLecs=document.querySelectorAll('.lectureItems');
+    for(i=2;i<myLecs.length;i++){
+        myLecs[i].classList.add('hide');
+    }
+    //hide 6 useful
+    myItems=document.querySelectorAll('.usefulItemsWrapper');
+    for(i=3;i<myItems.length;i++){
+        myItems[i].classList.add('hide');
+    }
+
+}
+function show(v,i,arr){
+    v.classList.remove('hide')
+}
+function showHide(){
+    console.log('resize working')
+    if(window.innerWidth<700 && mySize===big){
+        mySize='small';
+        hide();
+    }
+    else if(window.innerWidth>=700 && mySize===small){
+        mySize='big';
+        document.querySelectorAll('.lectureItems').forEach(show)
+        document.querySelectorAll('.usefulItem').forEach(show)
+    }
+}

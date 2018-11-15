@@ -184,7 +184,11 @@ img{
     .usefulItemsWrapper{
         display:flex;
         flex-wrap: wrap;
-       
+        .usefulInfoItem{
+            flex-basis: 10%;
+            display:flex;
+            flex-direction: column;
+            margin: 10px;
             h5{
                 font-weight: bolder;
                 padding: 5px 0;
@@ -197,14 +201,8 @@ img{
               width:150px;
             }
         }
-   
+    }
 };
-.usefulInfoItem{
-    flex-basis: 10%;
-    display:flex;
-    flex-direction: column;
-    margin: 10px;
-}
 .aboutUsContent{
     img{
         height: 50px;

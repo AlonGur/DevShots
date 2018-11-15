@@ -104,7 +104,11 @@ window.onload=function(){
         }
     
     }
-  
+    function show(v,i,arr){
+        console.log('in the show')
+        console(arr[i])
+        arr[i].classList.remove('hide')
+    }
     function showHide(){
         console.log('resize working')
         if(window.innerWidth<700 && screenSize==='big'){
@@ -113,8 +117,12 @@ window.onload=function(){
         }
         else if(window.innerWidth>=700 && screenSize==='small'){
             screenSize='big';
-          document.querySelectorAll('.lectureItem, .usefulInfoItem').forEach(item=>item.classList.remove('hide'))
-         
+            lecArr=Array.from(document.querySelectorAll('.lectureItem'))
+            lecArr.forEach(item=>item.classList.remove('hide'))
+           itemsArr=Array.from(document.querySelectorAll('.usefulInfoItem')) 
+           itemsArr.forEach(item=>item.classList.remove('hide'))
+           console.log(lecArr)
+           console.log(itemsArr)
         }
     }
 

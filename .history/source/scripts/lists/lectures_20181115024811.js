@@ -17,3 +17,4 @@ function getLecture(speaker, title, summary, imgSrc){
 for(i=0;i<speakers.length;i++){
     lectures.push(getLecture(speakers[i],lectureTitles[i],lectureSummary,lecturePic))
 }
+console.log('TESTTTTT')
