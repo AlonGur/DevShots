@@ -6,7 +6,7 @@ var lectureSummary=`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
 et dolore magna aliqua. Scelerisque fermentum dui faucibus in ornare. Aliquet sagittis id consectetur
 purus ut. Nisi quis eleifend quam adipiscing. Nulla aliquet enim tortor at auctor urna nunc id.
 Lacus luctus accumsan tortor posuere ac ut consequat se`;
-var lecturePic=`/images/michaelScott.png`
+var lecturePic=`images/michaelScott.png`
 function getLecture(speaker, title, summary, imgSrc){
     return({speaker: speaker  ,
     title:  title,

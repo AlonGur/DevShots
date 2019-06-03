@@ -12,7 +12,7 @@ function open() {
 
 //getting arriving info from arrivingList.JSon with AJAX and adding arrving details to the DOM
 var arriveReq = new XMLHttpRequest;
-arriveReq.open('GET', '/templates/arrivingLists.JSon');
+arriveReq.open('GET', 'templates/arrivingLists.JSon');
 arriveReq.onreadystatechange = function () {
     if (arriveReq.readyState === 4) {
         if (arriveReq.status === 200) {
@@ -42,9 +42,9 @@ arriveReq.send(null);
 //function getandcompileTemplte gets the template from url, compiles it with data, and adds it to target html
 
 //use function to load lectures
-getandcompileTemplate('/templates/lecturesHTML.html',lectures ,  document.querySelector('.lectureItemsWrapper'));
+getandcompileTemplate('templates/lecturesHTML.html',lectures ,  document.querySelector('.lectureItemsWrapper'));
 //use function to load useful items
-getandcompileTemplate('/templates/usefulItem.html',usefulData,document.querySelector('.usefulItemsWrapper'))
+getandcompileTemplate('templates/usefulItem.html',usefulData,document.querySelector('.usefulItemsWrapper'))
 
 
 function getandcompileTemplate(myTemplateURL,myData,myTarget){
