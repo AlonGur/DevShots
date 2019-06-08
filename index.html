@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Devshots</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/myStyles.css">
     <base href="">
 
@@ -14,15 +15,15 @@
 
 <body>
 
-    <div class="headerWrapper">
+    <section class="headerWrapper">
         <div class="headerContent">
             <span class="engTitle font2">DEVSHOTS</span>
             <span class="font2">אירוע המפתחים</span>
             <img class="netcraftLogo left" src="images/netcraft_logo.png">
         </div>
-    </div>
+    </section>
 
-    <div class="titleWrapper" id="title">
+    <section class="titleWrapper" id="title">
         <div class="navbarWrapper">
             <div class="navbarContent">
                 <ul class="navbar">ניווט
@@ -59,23 +60,23 @@
             </div>
         </div>
         <div class="slantedLine"></div>
-    </div>
+    </section>
    
-    <div class="lecturesWrapper" id="lectures">
+    <section class="lecturesWrapper" id="lectures">
         <div class="lecturesContent">
-            <div class="lectureTitleWrapper">
-                <span class="secTitle">6 הרצאות מרתקות וקצרות</span>
+            <div class="lectureTitleWrapper secTitle">
+                <span>6 הרצאות מרתקות וקצרות</span>
                 <span class="lectureTime">15 דקות לכל הרצאה</span>
             </div>
-            <div class="lectureItemsWrapper">
+            <div class="lectureItemsWrapper row">
                 <!--lecture items added with js/ajax/handlebars-->
                 <img src="images/spongebob.png" class="spongebob hide">
             </div>
 
         </div>
 
-    </div>
-    <div class="arrivingWrapper" id="arrival">
+    </section>
+    <section class="arrivingWrapper" id="arrival">
         <div class="arrivingContent">
             <div class="arrivingtextWrapper">
                 <div class="titleLine">
@@ -110,8 +111,8 @@
                 <img class="mapPic" src="https://via.placeholder.com/200x200">
             </div>
         </div>
-    </div>
-    <div class="signupWrapper" id="registration">
+    </section>
+    <section class="signupWrapper" id="registration">
         <div class="signupContent">
             <div class="signup-form">
                 <span class="secTitle">הרשמה</span>
@@ -138,15 +139,16 @@
 
             </div>
         </div>
-    </div>
-    <div class="usefulInfoWrapper container row" id="usefulInfo">
+    </section>
+    <section class="usefulInfoWrapper " id="usefulInfo">
         <div class="usefulInfoContent">
             <span class="secTitle">מידע שימושי</span>
             <!--   usefull info item added with js/ajax/handlbars -->
             <div class="usefulItemsWrapper"></div>
             <img class="zoidberg hide" src="images/zoidberg.png">
         </div>
-    </div>
+    </section>
+    <section class="aboutUs">
     <div class="aboutUsTitleWrapper">
 
         <span class="secTitle">קצת עלינו</span>
@@ -183,8 +185,9 @@
                 </li>
             </ul>
         </div>
-    </div>
-    <div class="footerWrapper">
+    </dic>
+</section>
+    <section class="footerWrapper">
         <div class="footerContent">
 
             <span>כל הזכויות שמורות לנטקראפט 2012</span>
@@ -197,7 +200,7 @@
            
 
         </div>
-    </div>
+    </section>
 
 
     <script id="lectureTemplate" type="text">
